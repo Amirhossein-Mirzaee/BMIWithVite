@@ -6,7 +6,13 @@
 
 body {
   background-image: url("../../images/bg.png");
-  background-size: cover;
+  @screen lg {
+    background-size: cover;
+  }
+
+  @screen xs {
+    background-size: auto;
+  }
 }
 /* styles.css */
 

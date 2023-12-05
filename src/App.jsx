@@ -35,8 +35,8 @@ const App = () => {
       <div>
         <Toaster />
       </div>
-      <div className="max-w-[2000px] mx-auto flex items-center justify-center flex-col min-h-screen">
-        <div className="bg-white/80 shadow-xl w-full max-w-4xl p-9 rounded-xl">
+      <div className="max-w-[2000px] mx-auto flex items-center justify-center flex-col min-h-screen xs:px-5">
+        <div className="bg-white/80 shadow-xl w-full max-w-4xl p-9 rounded-xl ">
           <p className="text-center font-semibold text-3xl mt-3 mb-11">BMI Generator</p>
           <Range
             weight={weight}
