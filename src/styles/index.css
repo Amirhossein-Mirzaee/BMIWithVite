@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../../images/bg.png");
+  background-size: cover;
+}
+/* styles.css */
+
+@layer components {
+  /* Add custom styles for the range input here */
+  #range {
+    @apply appearance-none block w-full bg-red-200 h-1 rounded-full outline-none cursor-pointer;
+  }
+
+  #range::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 bg-red-400 border-2 border-gray-200 rounded-md;
+  }
+
+  #range::-moz-range-thumb {
+    @apply appearance-none w-6 h-6 bg-red-400 border-2 border-gray-200 rounded-md;
+  }
+}
